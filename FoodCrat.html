@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>WAHNJEAB</title>
-    <link rel="shortcut icon" href="#" />
-     <!-- Bootstrap CSS -->
-     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-      /* CSS styles */
-      body {
-  background-color: #FEC7B4; /* เลือกสีพื้นหลังเป็นโทนสีชมพู-ม่วงอ่อน */
+
+<head>
+  <title>WAHNJEAB</title>
+  <link rel="shortcut icon" href="#" />
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* CSS styles */
+body {
+  background-color: #FEC7B4; /* เลือกสีพื้นหลังเป็นโทนเหลืองอ่อน */
 }
+
 .navbar {
-  background-color: #FFF3C7; /* เปลี่ยนสีของ Navbar เป็นสีชมพู-ม่วงอ่อน */
+  background-color: #FFF3C7; /* เปลี่ยนสีของ Navbar เป็นสีเหลืองอ่อน */
   color: #FFD23F;
   padding: 10px 20px;
   display: flex;
@@ -29,109 +31,107 @@
 .navbar-logo {
   width: 90px; /* กำหนดความกว้างของโลโก้ */
   height: auto; /* ทำให้สูงของโลโก้ปรับตามอัตราส่วน */
-  box-shadow:  0 12px 34px #3f010f(210, 191, 170, 0.523);
-      }
+  box-shadow: 0 12px 34px rgba(255, 245, 171, 0.523);
+}
 
-      .navbar-items {
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
+.navbar-items {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
-      .navbar-items li {
-        margin-right: 10px;
-      }
+.navbar-items li {
+  margin-right: 10px;
+}
 
-      .navbar-items li a {
-        color: white;
-        text-decoration: none;
-        transition: color 0.3s;
-      }
+.navbar-items li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-      .navbar-items li a:hover {
-        color: #f5f5f5;
-      }
+.navbar-items li a:hover {
+  color: #f5f5f5;
+}
 
-      .container {
-        display: flex;
-        justify-content:row;
-        margin-top: 20px;
-        padding: 0 20px;
-      }
+.container {
+  display: flex;
+  justify-content: row;
+  margin-top: 20px;
+  padding: 0 20px;
+}
 
-      .menu {
-        width: 70%;
-      }
+.menu {
+  width: 70%;
+}
 
-      .menu-item {
-        margin-bottom: 20px;
-        border-bottom: 1px solid #ccc;
-        padding-bottom: 20px;
-      }
+.menu-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
 
-      .menu-item:last-child {
-        border-bottom: none;
-      }
+.menu-item:last-child {
+  border-bottom: none;
+}
 
-      .menu-item img {
-        width: 150px; /* ปรับขนาดภาพให้มีความกว้าง 150px */
-        height: auto; /* ปรับสูงของภาพโดยอัตโนมัติ */
-        margin-right: 20px;
-      }
+.menu-item img {
+  width: 150px; /* ปรับขนาดภาพให้มีความกว้าง 150px */
+  height: auto; /* ปรับสูงของภาพโดยอัตโนมัติ */
+  margin-right: 20px;
+}
 
-      .menu-item h3 {
-        margin: 0 0 10px 0;
-        color: #333;
-      }
+.menu-item h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
 
-      .menu-item p {
-        margin: 0;
-      }
+.menu-item p {
+  margin: 0;
+}
 
-      .order {
-        width: 30%;
-        height: 30%;
-        background-color: #f5f5f5;
-        padding: 20px;
-        border-radius: 15px; /* เพิ่มขอบโค้งให้กับกล่องข้อความ */
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเส้นขอบรอบโค้ง */
-      }
+.order {
+  width: 30%;
+  height: 30%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 15px; /* เพิ่มขอบโค้งให้กับกล่องข้อความ */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเส้นขอบรอบโค้ง */
+}
 
-      .order-button:hover {
-        background-color: #555; /* เปลี่ยนสีพื้นหลังเป็นสีเข้มเมื่อ hover */
-      }
+.order-button:hover {
+  background-color: #555; /* เปลี่ยนสีพื้นหลังเป็นสีเข้มเมื่อ hover */
+}
 
-      .order h2 {
-        margin-top: 0;
-        color: #333;
-        margin-bottom: 20px;
-      }
+.order h2 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 20px;
+}
 
-      .order-item {
-        margin-bottom: 10px;
-      }
+.order-item {
+  margin-bottom: 10px;
+}
 
-      .order-item p {
-        margin: 0;
-      }
+.order-item p {
+  margin: 0;
+}
 
-      .order-total {
-        font-weight: bold;
-      }
+.order-total {
+  font-weight: bold;
+}
 
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .order-card {
   height: 400px; /* Adjust the height as needed */
 }
-
 
 .card {
   width: 100%;
@@ -141,8 +141,7 @@
   overflow: hidden;
   padding: 0.5rem;
   border-radius: 30px;
-  box-shadow:  0 12px 34px #e53e65(210, 191, 170, 0.523);
-;
+  box-shadow: 0 12px 34px rgba(210, 191, 170, 0.523);
 }
 
 .card .card-img-top {
@@ -158,372 +157,397 @@
 
 .order-card {
   position: sticky;
-    top: 20px;
+  top: 20px;
   height: auto; /* Adjust the height as needed */
-  
 }
-      .order-button {
-        background-color: #333; /* สีพื้นหลังของปุ่ม */
-        color: white; /* สีข้อความบนปุ่ม */
-        border: none;
-        padding: 10px 20px;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 15px; /* เพิ่มขอบโค้งให้กับปุ่ม */
-        cursor: pointer;
-      }
 
-      .order-button:hover {
-        background-color: #555; /* เปลี่ยนสีพื้นหลังเป็นสีเข้มเมื่อ hover */
-      }
+.order-button {
+  background-color: #FEC7B4; /* สีพื้นหลังของปุ่ม */
+  color: rgb(0, 0, 0); /* สีข้อความบนปุ่ม */
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px; /* เพิ่มขอบโค้งให้กับปุ่ม */
+  cursor: pointer;
+}
 
-      /* Additional CSS for image resizing */
-      .order-item img {
-        width: 100%; /* Adjust as needed */
-        height: 100%;
-        margin-right: 10px;
-      }
-      /* CSS styles for PDF slip format */
-      /* CSS styles for PDF slip format */
-      @media print {
-        body {
-          margin: 0;
-          padding: 0;
-          font-family: Arial, sans-serif;
-        }
-        .container {
-          width: 58mm; /* ปรับขนาดเป็น 58 มม. */
-          margin: 0 auto;
-          padding: 10px;
-          box-sizing: border-box;
-          border: 2px solid #000;
-        }
-        .header {
-          text-align: center;
-          margin-bottom: 10px;
-        }
-        .order-summary {
-          margin-bottom: 10px;
-        }
-        .order-summary p {
-          margin: 0;
-        }
-        .order-items {
-          margin-bottom: 10px;
-        }
-        .order-items ul {
-          padding-left: 0;
-          list-style: none;
-          margin: 0;
-        }
-        .order-items li {
-          margin-bottom: 5px;
-        }
-        .total {
-          text-align: right;
-          font-weight: bold;
-        }
-      }
-      .edit-button {
-        background-color: #333; /* สีพื้นหลังของปุ่ม */
-        color: white; /* สีข้อความบนปุ่ม */
-        border: none;
-        padding: 10px 20px;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 25px; /* เพิ่มขอบโค้งให้กับปุ่ม */
-        cursor: pointer;
-      }
-      .edit-button:hover {
-        background-color: #555;
-      }
-  /* Review Section Styles */
-  .carousel-item {
-      text-align: center;
-    }
+.order-button:hover {
+  background-color: #FFF3C7; /* เปลี่ยนสีพื้นหลังเป็นสีเข้มเมื่อ hover */
+}
 
-    .review-card {
-      background-color: #f9f3de;
-      width: 70%;
-      margin: auto;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    }
+/* Additional CSS for image resizing */
+.order-item img {
+  width: 100%; /* Adjust as needed */
+  height: 100%;
+  margin-right: 10px;
+}
 
-    .review-card .card-img-top {
-      width: 150px;
-      height: 150px;
-      margin: 0 auto;
-      margin-top: 10px;
-      border-radius: 50%;
-    }
+/* CSS styles for PDF slip format */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
 
-    .carousel-control-prev, .carousel-control-next {
-      color: #fffcd6;
-    }
+  .container {
+    width: 58mm; /* ปรับขนาดเป็น 58 มม. */
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+  }
 
-    /* Bootstrap Overrides */
-    .container {
-      max-width: 1200px;
-    }
-     /* Responsive Styles */
-     @media (max-width: 768px) {
-      .menu-item {
-        margin-bottom: 20px;
-      }
-    }
+  .header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-    </style>
-  </head>
-  <body>
+  .order-summary {
+    margin-bottom: 10px;
+  }
+
+  .order-summary p {
+    margin: 0;
+  }
+
+  .order-items {
+    margin-bottom: 10px;
+  }
+
+  .order-items ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+  }
+
+  .order-items li {
+    margin-bottom: 5px;
+  }
+
+  .total {
+    text-align: right;
+    font-weight: bold;
+  }
+}
+
+.edit-button {
+  background-color: #333; /* สีพื้นหลังของปุ่ม */
+  color: white; /* สีข้อความบนปุ่ม */
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 25px; /* เพิ่มขอบโค้งให้กับปุ่ม */
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #555;
+}
+
+/* Review Section Styles */
+.carousel-item {
+  text-align: center;
+}
+
+.review-card {
+  background-color: #fffef2;
+  width: 70%; /* ปรับขนาดของรีวิวให้เล็กลง */
+  margin: auto; /* จัดให้รีวิวอยู่ตรงกลาง */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-card .card-img-top {
+  width: 160px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  color: #fffcd6;
+}
+
+.review-section {
+  max-width: 800px; /* ปรับขนาดส่วน Review Section ให้เล็กลง */
+  margin: 0 auto; /* จัดให้ Review Section อยู่ตรงกลาง */
+}
+
+.remove-button {
+  background-color: #FEC7B4;
+  color: #000000;
+}
+
+.remove-button:hover {
+  background-color: #FFF3C7;
+}
+
+/* Responsive Design */
+@media (min-width: 576px) {
+  .menu-item {
+    width: 48%;
+  }
+
+  .order {
+    width: 48%;
+  }
+}
+
+  </style>
+</head>
+
+<body>
   <nav class="navbar">
-      <div class="container">
-          <a href="#" class="navbar-brand">WAHNJEAB</a>
-          <img src="LOGO2.png" alt="Logo" class="navbar-logo">
-      </div>
+    <div class="container">
+      <a href="#" class="navbar-brand">WAHNJEAB</a>
+      <img src="LOGO2.png" alt="Logo" class="navbar-logo">
+    </div>
   </nav>
-
-
-  
   <div class="container mt-10">
-      <div class="row">
-          <div class="col-md-12">
-              <!-- Menu items -->
-              <div class="row">
-                  <!-- Replace the following menu items with data from your old webpage -->
-                  <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <img src="product1.jpg" class="card-img-top" alt="Dish 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Dish 1</h5>
-                            <p class="card-text">Description of Dish 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p class="card-text">30 บาท</p>
-                            <button class="order-button" data-product-id="1" data-price="30">Order Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <img src="product2.jpg" class="card-img-top" alt="Dish 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Dish 2</h5>
-                            <p class="card-text">Description of Dish 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p class="card-text">40 บาท</p>
-                            <button class="order-button" data-product-id="2" data-price="40">Order Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <img src="product3.jpg" class="card-img-top" alt="Dish 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Dish 3</h5>
-                            <p class="card-text">Description of Dish 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p class="card-text">40 บาท</p>
-                            <button class="order-button" data-product-id="3" data-price="40">Order Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <div class="card">
-                        <img src="product4.jpg" class="card-img-top" alt="Dish 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Dish 4</h5>
-                             <p class="card-text">Description of Dish 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <p class="card-text">40 บาท</p>
-                            <button class="order-button" data-product-id="4" data-price="40">Order Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-4">
-                  <div class="card">
-                      <img src="product5.jpg" class="card-img-top" alt="Dish 2">
-                      <div class="card-body">
-                          <h5 class="card-title">Dish 5</h5>
-                           <p class="card-text">Description of Dish 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                          <p class="card-text">40 บาท</p>
-                          <button class="order-button" data-product-id="5" data-price="40">Order Now</button>
-                      </div>
-                  </div>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Menu items -->
+        <div class="row">
+          <!-- Replace the following menu items with data from your old webpage -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="product1.jpg" class="card-img-top" alt="Dish 1">
+              <div class="card-body">
+                <h5 class="card-title">เส้นขนมจีน</h5>
+                <p class="card-text">ขนมจีน ชุดละ</p>
+                <p class="card-text">30 บาท</p>
+                <button class="order-button" data-product-id="1" data-price="30 บาท">Order Now</button>
               </div>
-              <div class="col-md-6 mb-4">
-                <div class="card">
-                    <img src="product6.jpg" class="card-img-top" alt="Dish 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Dish 6</h5>
-                         <p class="card-text">Description of Dish 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <p class="card-text">120 บาท</p>
-                        <button class="order-button" data-product-id="6" data-price="40">Order Now</button>
-                    </div>
-                </div>
             </div>
-            <div class="col-md-6 mb-4">
-              <div class="card">
-                  <img src="product7.jpg" class="card-img-top" alt="Dish 2">
-                  <div class="card-body">
-                      <h5 class="card-title">Dish 7</h5>
-                       <p class="card-text">Description of Dish 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                      <p class="card-text">150 บาท</p>
-                      <button class="order-button" data-product-id="7" data-price="40">Order Now</button>
-                  </div>
-              </div>
           </div>
           <div class="col-md-6 mb-4">
             <div class="card">
-                <img src="product8.jpg" class="card-img-top" alt="Dish 2">
-                <div class="card-body">
-                    <h5 class="card-title">Dish 8</h5>
-                     <p class="card-text">Description of Dish 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p class="card-text">100 บาท</p>
-                    <button class="order-button" data-product-id="8" data-price="40">Order Now</button>
-                </div>
+              <img src="product2.jpg" class="card-img-top" alt="Dish 2">
+              <div class="card-body">
+                <h5 class="card-title">แกงป่าขาไก่</h5>
+                <p class="card-text">แกงป่า+ขนมจีน ชุดละ</p>
+                <p class="card-text">40 บาท</p>
+                <button class="order-button" data-product-id="2" data-price="40 บาท">Order Now</button>
+              </div>
             </div>
-        </div>
-        <div class="col-md-6 mb-4">
-          <div class="card">
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="product3.jpg" class="card-img-top" alt="Dish 2">
+              <div class="card-body">
+                <h5 class="card-title">แกงเขียวหวานไก่</h5>
+                <p class="card-text">แกงเขียวหวานไก่+ขนมจีน ชุดละ</p>
+                <p class="card-text">50 บาท</p>
+                <button class="order-button" data-product-id="3" data-price="50 บาท">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="product4.jpg" class="card-img-top" alt="Dish 2">
+              <div class="card-body">
+                <h5 class="card-title">น้ำพริกกถั่ว</h5>
+                <p class="card-text">น้ำพริกถั่ว+ขนมจีน ชุดละ</p>
+                <p class="card-text">40 บาท</p>
+                <button class="order-button" data-product-id="4" data-price="40 บาท">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="product5.jpg" class="card-img-top" alt="Dish 2">
+              <div class="card-body">
+                <h5 class="card-title">แกงกะทิลูกชิ้นปลา</h5>
+                <p class="card-text">แกงกะทิลูกชิ้นปลา+ขนมจีน ชุดละ</p>
+                <p class="card-text">40 บาท</p>
+                <button class="order-button" data-product-id="5" data-price="40 บาท">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="product6.jpg" class="card-img-top" alt="Dish 2">
+              <div class="card-body">
+                <h5 class="card-title">ผัดไท</h5>
+                <p class="card-text">ผัดไท หมู/กุ้ง/ทะเล</p>
+                <p class="card-text">60 บาท</p>
+                <button class="order-button" data-product-id="6" data-price="60 บาท">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="product7.jpg" class="card-img-top" alt="Dish 2">
+              <div class="card-body">
+                <h5 class="card-title">กะเพราถาด</h5>
+                <p class="card-text">กะเพรา หมู/ไก่/ทะเล/รวมมิตร</p>
+                <p class="card-text">75 บาท</p>
+                <button class="order-button" data-product-id="7" data-price="75 บาท">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="product8.jpg" class="card-img-top" alt="Dish 2">
+              <div class="card-body">
+                <h5 class="card-title">บัวลอย</h5>
+                <p class="card-text">บอยลอยมะพร้าวอ่อน</p>
+                <p class="card-text">20 บาท</p>
+                <button class="order-button" data-product-id="8" data-price="20 บาท">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
               <img src="product9.jpg" class="card-img-top" alt="Dish 2">
               <div class="card-body">
-                  <h5 class="card-title">Dish 9</h5>
-                   <p class="card-text">Description of Dish 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                  <p class="card-text">40 บาท</p>
-                  <button class="order-button" data-product-id="9" data-price="40">Order Now</button>
+                <h5 class="card-title">ลอดช่อง</h5>
+                <p class="card-text">ลอดช่องน้ำกะทิ ชุดละ</p>
+                <p class="card-text">15 บาท</p>
+                <button class="order-button" data-product-id="9" data-price="15 บาท">Order Now</button>
               </div>
+            </div>
           </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="product10.jpg" class="card-img-top" alt="Dish 2">
+              <div class="card-body">
+                <h5 class="card-title">เฉาก๊วย</h5>
+                <p class="card-text">เฉาก๊วยน้ำเชื่อม/เฉาก๊วยนมสด</p>
+                <p class="card-text">25 บาท</p>
+                <button class="order-button" data-product-id="10" data-price="25 บาท">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="product11.jpg" class="card-img-top" alt="Dish 11">
+              <div class="card-body">
+                <h5 class="card-title">แกงบวชฟักทอง</h5>
+                <p class="card-text">แกงบวชฟักทอง</p>
+                <p class="card-text">15 บาท</p>
+                <button class="order-button" data-product-id="11" data-price="15 บาท">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more menu items here -->
       </div>
-      <div class="col-md-6 mb-4">
-        <div class="card">
-            <img src="product10.jpg" class="card-img-top" alt="Dish 2">
-            <div class="card-body">
-                <h5 class="card-title">Dish 10</h5>
-                 <p class="card-text">Description of Dish 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="card-text">40 บาท</p>
-                <button class="order-button" data-product-id="10" data-price="40">Order Now</button>
-            </div>
-        </div>
-    </div> 
-    <div class="col-md-6 mb-4">
-        <div class="card">
-            <img src="product11.jpg" class="card-img-top" alt="Dish 2">
-            <div class="card-body">
-                <h5 class="card-title">Dish 10</h5>
-                 <p class="card-text">Description of Dish 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p class="card-text">40 บาท</p>
-                <button class="order-button" data-product-id="10" data-price="40">Order Now</button>
-            </div>
-        </div>
-    </div>   
-</div>         
-                  <!-- Add more menu items here -->
-            </div>
-            
+
+    </div>
+    <div class="col-md-4">
+      <!-- Order section -->
+      <div class="card order-card">
+        <h5 class="card-header">Your Order</h5>
+        <div class="card-body">
+          <!-- Your order form and items will go here -->
+          <form id="customer-info">
+            <label for="customer-name">Name:</label>
+            <input type="text" id="customer-name" name="customer-name" required /><br /><br />
+            <label for="customer-phone">Phone:</label>
+            <input type="tel" id="customer-phone" name="customer-phone" required /><br /><br />
+            <label for="order-date">Order Date:</label>
+            <input type="date" id="order-date" name="order-date" required /><br /><br />
+          </form>
+          <div class="order-items">
+            <!-- Order items will be displayed here -->
           </div>
-          <div class="col-md-4">
-            <!-- Order section -->
-            <div class="card order-card">
-                <h5 class="card-header">Your Order</h5>
-                <div class="card-body">
-                    <!-- Your order form and items will go here -->
-                    <form id="customer-info">
-                        <label for="customer-name">Name:</label>
-                        <input type="text" id="customer-name" name="customer-name" required /><br /><br />
-                        <label for="customer-phone">Phone:</label>
-                        <input type="tel" id="customer-phone" name="customer-phone" required /><br /><br />
-                        <label for="order-date">Order Date:</label>
-                        <input type="date" id="order-date" name="order-date" required /><br /><br />
-                    </form>
-                    <div class="order-items">
-                        <!-- Order items will be displayed here -->
-                    </div>
-                    <p class="order-total">Total: $<span id="order-total">0.00</span></p>
-                    <button id="checkout-button" class="order-button">Checkout</button>
-                </div>
-            </div>
+          <p class="order-total">Total: $<span id="order-total">0.00</span></p>
+          <button id="checkout-button" class="order-button">Checkout</button>
         </div>
-          </div>
       </div>
+    </div>
   </div>
-<!-- Review Section -->
-<div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="card text-center review-card">
-        <img src="review1.jpg" class="card-img-top rounded-circle" alt="Review 1">
-        <div class="card-body">
-          <h5 class="card-title">Review 1</h5>
-          <p class="card-text">Description of review 1.</p>
-          <div class="rating">
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9734;</span> <!-- ดาวที่ไม่ได้รับการให้คะแนน -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Add more carousel items as needed -->
-    <div class="carousel-item">
-      <div class="card text-center review-card">
-        <img src="review2.jpg" class="card-img-top rounded-circle" alt="Review 2">
-        <div class="card-body">
-          <h5 class="card-title">Review 2</h5>
-          <p class="card-text">Description of review 2.</p>
-          <div class="rating">
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9734;</span> <!-- ดาวที่ไม่ได้รับการให้คะแนน -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card text-center review-card">
-        <img src="review3.jpg" class="card-img-top rounded-circle" alt="Review 3">
-        <div class="card-body">
-          <h5 class="card-title">Review 3</h5>
-          <p class="card-text">Description of review 3.</p>
-          <div class="rating">
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9734;</span> <!-- ดาวที่ไม่ได้รับการให้คะแนน -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <div class="card text-center review-card">
-        <img src="review4.jpg" class="card-img-top rounded-circle" alt="Review 4">
-        <div class="card-body">
-          <h5 class="card-title">Review 4</h5>
-          <p class="card-text">Description of review 4.</p>
-          <div class="rating">
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9733;</span>
-            <span class="star">&#9734;</span> <!-- ดาวที่ไม่ได้รับการให้คะแนน -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Add more carousel items as needed -->
   </div>
-  <!-- Add carousel controls here -->
-</div>
+  </div>
+  <!-- Review Section -->
+  <div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
+    <div class="carousel-inner review-section">
+      <div class="carousel-item active">
+        <div class="card text-center review-card">
+          <img src="review1.jpg" class="card-img-top rounded-circle" alt="Review 1">
+          <div class="card-body">
+            <h5 class="card-title">Review 1</h5>
+            <p class="card-text">Description of review 1.</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span> <!-- ดาวที่ไม่ได้รับการให้คะแนน -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add more carousel items as needed -->
+      <div class="carousel-item">
+        <div class="card text-center review-card">
+          <img src="review2.jpg" class="card-img-top rounded-circle" alt="Review 2">
+          <div class="card-body">
+            <h5 class="card-title">Review 2</h5>
+            <p class="card-text">Description of review 2.</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span> <!-- ดาวที่ไม่ได้รับการให้คะแนน -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card text-center review-card">
+          <img src="review3.jpg" class="card-img-top rounded-circle" alt="Review 3">
+          <div class="card-body">
+            <h5 class="card-title">Review 3</h5>
+            <p class="card-text">Description of review 3.</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span> <!-- ดาวที่ไม่ได้รับการให้คะแนน -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card text-center review-card">
+          <img src="review4.jpg" class="card-img-top rounded-circle" alt="Review 4">
+          <div class="card-body">
+            <h5 class="card-title">Review 4</h5>
+            <p class="card-text">Description of review 4.</p>
+            <div class="rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9734;</span> <!-- ดาวที่ไม่ได้รับการให้คะแนน -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add more carousel items as needed -->
+    </div>
+    <!-- Add carousel controls here -->
+  </div>
 
 
-  
+
   <!-- Bootstrap JS and dependencies -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="FoodCrat.js"></script>
-  </body>
-  </html>
+</body>
+
+</html>

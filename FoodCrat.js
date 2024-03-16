@@ -48,7 +48,7 @@ function updateCartDisplay() {
             const orderItemElement = document.createElement("div");
             orderItemElement.classList.add("order-item");
             orderItemElement.innerHTML = `
-                <p><span class="item-name">${item.name}</span> - Quantity: <span class="item-quantity">${item.quantity}</span> x $<span class="item-price">${item.price.toFixed(2)}</span> 
+                <p><span class="item-name">${item.name}</span> - จำนวน: <span class="item-quantity">${item.quantity}</span> x <span class="item-price">${item.price.toFixed(2)+ "บาท"}</span> 
                 <button class="remove-button" data-product-id="${productId}">Remove</button></p>
             `;
             orderItemsElement.appendChild(orderItemElement);
@@ -61,7 +61,7 @@ function updateCartDisplay() {
         }
     }
 
-    orderTotalElement.textContent = totalPrice.toFixed(2);
+    orderTotalElement.textContent = totalPrice.toFixed(2) + "บาท";
 }
 
 function removeFromCart(productId) {
@@ -88,7 +88,7 @@ document.getElementById("checkout-button").addEventListener("click", function ()
 
         var invoiceContent = `
             <h2>FOOD BILL</h2>
-            <p><strong>Restaurant Name:</strong> SE FOOD</p>
+            <p><strong>Restaurant Name:</strong> WAHNJEAB </p>
             <p><strong>Customer Name:</strong> ${customerName}</p>
             <p><strong>Customer Phone:</strong> ${customerPhone}</p>
             <p><strong>Order Date:</strong> ${orderDate}</p>
@@ -100,18 +100,29 @@ document.getElementById("checkout-button").addEventListener("click", function ()
         for (const productId in cart) {
             const item = cart[productId];
             if (!isNaN(item.price)) {
-                invoiceContent += `<li>${item.name} - Quantity: ${item.quantity} x $${item.price.toFixed(2)}</li>`;
+                invoiceContent += `<li>${item.name} - จำนวน: ${item.quantity} x ${item.price.toFixed(2) + "บาท"}</li>`;
             }
         }
 
-        invoiceContent += `</ul><p><strong>Total Quantity:</strong> ${totalQuantity}</p>`;
-        invoiceContent += `<p><strong>Total Price:</strong> $${totalPrice.toFixed(2)}</p>`;
+        invoiceContent += `</ul><p><strong>รวมทั้งหมด :</strong> ${totalQuantity}</p>`;
+        invoiceContent += `<p><strong>Total Price:</strong> ${totalPrice.toFixed(2) + "บาท"}</p>`;
 
         var printWindow = window.open('', '_blank');
         printWindow.document.open();
         printWindow.document.write(invoiceContent);
         printWindow.document.close();
         printWindow.print();
+
+        // ล้าง cart เมื่อกด checkout
+        for (const productId in cart) {
+            delete cart[productId];
+        }
+        updateCartDisplay();
+
+        // ล้างค่าชื่อ, เบอร์โทร, และวันที่
+        document.getElementById("customer-name").value = "";
+        document.getElementById("customer-phone").value = "";
+        document.getElementById("order-date").value = "";
     } else {
         alert("Please fill in all customer details!");
     }
